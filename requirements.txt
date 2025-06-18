@@ -1,0 +1,7 @@
+streamlit
+pandas
+langchain
+langchain-community
+llama-cpp-python
+Pillow
+
