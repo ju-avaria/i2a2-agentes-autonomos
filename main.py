@@ -34,7 +34,7 @@ def detectar_delimitador(caminho_csv):
 uploaded_zip = st.file_uploader("Envie o seu arquivo ZIP contendo os CSVs:", type="zip")
 
 if uploaded_zip:
-    extract_path = "dados/extracao"
+    extract_path = "/tmp/dados_extracao"
     os.makedirs(extract_path, exist_ok=True)
     for f in os.listdir(extract_path):
         os.remove(os.path.join(extract_path, f))
