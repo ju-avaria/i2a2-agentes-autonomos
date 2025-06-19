@@ -10,7 +10,7 @@
 <p align="center">
   Projeto desenvolvido no curso:. Utiliza LLM local para responder perguntas sobre dados fiscais com interface acessível via navegador.
 </p>
-
+Caso queira acessar online: https://testeia-production.up.railway.app/
 
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
 ![LLM](https://img.shields.io/badge/LLM-local-lightgrey)
@@ -62,6 +62,16 @@ Este agente utiliza um modelo de linguagem leve (tinyllama.gguf) executado local
     Dificuldade com perguntas complexas ou ambíguas;
 
     Alucinação de valores ou inferências que não estão nos dados.
+    
+Abaixo estão algumas perguntas em **linguagem natural** que você pode fazer ao agente após carregar um arquivo CSV de notas fiscais:
+
+- 📊 **Qual o valor total das notas fiscais?**
+- 🔍 **Quantas notas foram emitidas no mês?**
+- 🏷️ **Quais são os CNPJs únicos presentes no arquivo?**
+- 📅 **Qual a data da primeira nota fiscal emitida?**
+- 💵 **Qual a nota com maior valor?**
+- 
+![Captura de tela de 2025-06-18 13-11-28](https://github.com/user-attachments/assets/14bbbd0e-4ad8-4dbd-85fd-78beb2813805)
 
 
 <h2>Rodando Localmente com Docker</h2>
