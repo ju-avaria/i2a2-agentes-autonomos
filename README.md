@@ -108,5 +108,5 @@ PS: Este projeto está em constante desenvolvimento como parte do curso de Agent
 Agradecemos por visitar este repositório!  
 Estamos continuamente aprimorando a solução à medida que avançamos no conteúdo da disciplina.
 
-<strong>Com ❤️ por Jaun Avaria e Nadianne Galvão  💻</strong>
+<strong>Com ❤️ por Juan Avaria e Nadianne Galvão  💻</strong>
 
