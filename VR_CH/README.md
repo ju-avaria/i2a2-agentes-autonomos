@@ -1,7 +1,15 @@
 # Automação da compra de VR/VA
 
-Pipeline determinística que **consolida bases**, **valida** dados, **aplica exclusões** (férias/afastamentos/estágio/aprendiz/diretoria), **conta dias úteis** por sindicato/UF/município e **calcula os valores** de VR/VA por colaborador.  
-A saída é um Excel padronizado na pasta out.
+Este projeto é fruto do **Desafio 04** e tem como objetivo **automatizar o processo mensal de compra de VR (Vale Refeição)**, garantindo que cada colaborador receba o valor correto considerando **ausências, férias, datas de admissão/desligamento** e **calendário de feriados**.
+
+Construímos uma **pipeline determinística** que:
+- **Consolida bases** (ativos, férias, desligados, cadastral, sindicato/valor);
+- **Valida** dados (pré-verificações);
+- **Aplica exclusões** (férias, afastamentos, estágio, aprendiz, diretoria/executivos etc.);
+- **Conta dias úteis** por **sindicato/UF/município**;
+- **Calcula os valores** de VR/VA por colaborador.
+
+**Saída:** um Excel padronizado gerado em `./out/` 
 
 > **Documentação geral**: na **raiz deste projeto** você encontra um PDF com visão geral e instruções que facilitam a execução dos projetos.
 
@@ -18,7 +26,6 @@ A saída é um Excel padronizado na pasta out.
 ### 🐧 Linux
 ```bash
 cd VR_CH
-mkdir -p app dados out ollama
 
 # (opcional) exportar UID/GID para alinhar permissões
 export UID=$(id -u) GID=$(id -g)
@@ -37,7 +44,6 @@ ls out/
 
 ```bash
 cd VR_CH
-mkdir app,dados,out,ollama
 
 # ajuste app\.env.example e rode:
 docker compose -f docker-compose.windows.yml up -d --build
@@ -48,3 +54,4 @@ docker logs -f vrva-agent
 # resultado em .\out\
 
 ```
+
