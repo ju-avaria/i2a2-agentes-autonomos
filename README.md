@@ -15,8 +15,6 @@
 ![LLM](https://img.shields.io/badge/LLM-local-lightgrey)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Acesse online: https://testeia-production.up.railway.app/
-
 
 ![image](https://github.com/user-attachments/assets/971dd4c8-2136-4643-a8fc-138baa80506c)
 
