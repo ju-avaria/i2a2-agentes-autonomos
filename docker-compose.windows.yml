@@ -1,0 +1,63 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama:/root/.ollama
+    environment:
+      - OLLAMA_NOPRUNE=1
+    healthcheck:
+      test: ["CMD", "sh", "-lc", "curl -fsS http://localhost:11434/api/tags >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  chroma:
+    image: chromadb/chroma:0.5.4
+    container_name: chroma
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/data
+    environment:
+      - CHROMA_ANONYMIZED_TELEMETRY=False
+    healthcheck:
+      test: ["CMD", "sh", "-lc", "curl -fsS http://localhost:8000/api/v1/tenants/default_tenant >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: ./app
+    container_name: vrva-agent
+    restart: unless-stopped
+    depends_on:
+      chroma:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    env_file:
+      - ./app/.env.example
+    # sem `user:` no Windows (roda como root no container)
+    environment:
+      - HOME=/app
+      - XDG_CACHE_HOME=/app/.cache
+      - HUGGINGFACE_HUB_CACHE=/app/.cache/hf
+      - TRANSFORMERS_CACHE=/app/.cache/hf
+      - ANONYMIZED_TELEMETRY=False
+      - LANGCHAIN_TRACING_V2=false
+      - LANGSMITH_TRACING=false
+    volumes:
+      - ./app:/app
+      - ./dados:/dados
+      - ./out:/out
+      - app_cache:/app/.cache
+    command: ["sh","-lc","mkdir -p /app/.cache && python -u main.py"]
+
+volumes:
+  chroma_data: {}
+  app_cache: {}
