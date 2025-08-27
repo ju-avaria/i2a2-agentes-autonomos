@@ -4,7 +4,7 @@
 
 # Desafios — I2A2 (Criando Agentes Autônomos com IA)
 
-Repositório com os projetos desenvolvidos no curso **I2A2 – Institute of Applied Artificial Intelligence**: _Criando Agentes Autônomos com IA_.
+Nós da equipe BR and CH criamos esse repositório com os projetos desenvolvidos no curso **I2A2 – Institute of Applied Artificial Intelligence**: _Criando Agentes Autônomos com IA_.
 
 Cada projeto possui seu próprio **README** com instruções para execução no seu sistema operacional. Todos estão **containerizados**, facilitando a instalação e a execução.
 
@@ -14,6 +14,7 @@ Cada projeto possui seu próprio **README** com instruções para execução no 
   Pipeline determinística que consolida bases (ativos, férias, desligados etc.), aplica regras de negócio e gera o **layout Excel** para compra mensal.
 
 ---
+
 
 
 
