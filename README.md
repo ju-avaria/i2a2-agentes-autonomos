@@ -2,9 +2,11 @@
   <img src="./Capa.png" alt="Capa do projeto" width="800">
 </p>
 
-#Desafios — I2A2 (Criando Agentes Autônomos com IA)
+# Desafios — I2A2 (Criando Agentes Autônomos com IA)
 
 Repositório com os projetos desenvolvidos no curso **I2A2 – Institute of Applied Artificial Intelligence**: _Criando Agentes Autônomos com IA_.
+
+Cada projeto possui seu próprio **README** com instruções para execução no seu sistema operacional. Todos estão **containerizados**, facilitando a instalação e a execução.
 
 - **`AssistenteMEI/`** — **Agente Inteligente de Notas Fiscais**  
   Usa **LLM local** para responder perguntas sobre **dados fiscais**, com **interface acessível via navegador**.
@@ -12,6 +14,7 @@ Repositório com os projetos desenvolvidos no curso **I2A2 – Institute of Appl
   Pipeline determinística que consolida bases (ativos, férias, desligados etc.), aplica regras de negócio e gera o **layout Excel** para compra mensal.
 
 ---
+
 
 
 
