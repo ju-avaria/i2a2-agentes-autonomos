@@ -26,7 +26,7 @@ def to_decimal(s: Optional[str]) -> Optional[Decimal]:
     if not s:
         return None
     try:
-        # Normaliza vírgula para ponto, se vier em alguns layouts
+      
         s = s.replace(",", ".")
         return Decimal(s)
     except InvalidOperation:
