@@ -3,7 +3,6 @@ import io, os, math, zipfile, tarfile
 import yara
 from defusedxml.ElementTree import fromstring as safe_xml_parse
 
-# libmagic é opcional (fallback abaixo)
 try:
     import magic
 except Exception:
@@ -14,7 +13,7 @@ MAX_SIZE = 10 * 1024 * 1024
 MAX_ARCHIVE_FILES = 200
 MAX_ARCHIVE_RATIO = 30.0
 MAX_DEPTH = 3
-YARA_RULES_PATH = "yara_rules/index.yar"  # opcional
+YARA_RULES_PATH = "yara_rules/index.yar"  
 
 # ---------- MIME com fallback ----------
 def _mime_with_fallback(b: bytes) -> str:
@@ -50,7 +49,6 @@ def _entropy(b: bytes) -> float:
     return -sum((c/n)*math.log2(c/n) for c in Counter(b).values())
 
 def _xml_safe(b: bytes):
-    # Parse safe; levanta exceção se malformado
     safe_xml_parse(b.decode("utf-8", "ignore"))
 
 def _scan_archive(content: bytes, depth=0):
@@ -122,7 +120,7 @@ def mini_av_scan_detalhado(filename: str, b: bytes) -> dict:
         steps.append({"name":"MIME sniff","ok":False,"detail":str(e)})
         reasons.append("MIME_ERROR"); score += 60
 
-    # Validação de formato (somente XML)
+    # Validação 
     try:
         if mime in ALLOWED_MIME:
             _xml_safe(b)
@@ -133,7 +131,7 @@ def mini_av_scan_detalhado(filename: str, b: bytes) -> dict:
         steps.append({"name":"Validação de formato","ok":False,"detail":type(e).__name__})
         reasons.append(f"FORMAT_INVALID:{type(e).__name__}"); score += 60
 
-    # Heurística de executável/script
+
     bin_exec = _is_pe_elf_macho(b)
     script = _looks_script(b)
     steps.append({"name":"Executável/Scripts","ok": not (bin_exec or script),
