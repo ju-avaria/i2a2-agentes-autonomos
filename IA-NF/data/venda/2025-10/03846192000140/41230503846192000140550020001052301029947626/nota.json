@@ -1,0 +1,183 @@
+{
+  "extracted": {
+    "chave_acesso": "41230503846192000140550020001052301029947626",
+    "ide": {
+      "cUF": "41",
+      "cNF": "02994762",
+      "natOp": "Venda merc, Interest.",
+      "mod": "55",
+      "serie": "2",
+      "nNF": "105230",
+      "dhEmi": "",
+      "tpNF": "1",
+      "idDest": "2",
+      "cMunFG": "4115200",
+      "tpImp": "1",
+      "tpEmis": "1",
+      "cDV": "6",
+      "tpAmb": "1",
+      "finNFe": "1",
+      "indFinal": "1",
+      "indPres": "2",
+      "procEmi": "0",
+      "verProc": "3.5"
+    },
+    "emit": {
+      "CNPJ": "03846192000140",
+      "CPF": "",
+      "xNome": "MUSITECH INSTRUMENTOS MUSICAIS LTDA",
+      "xFant": "MUSITECH",
+      "IE": "9021200171",
+      "IEST": "",
+      "IM": "",
+      "CNAE": "",
+      "CRT": "3",
+      "enderEmit": {
+        "xLgr": "AV. HERVAL, 695",
+        "nro": "695",
+        "xCpl": "",
+        "xBairro": "CENTRO",
+        "cMun": "4115200",
+        "xMun": "Maringa",
+        "UF": "PR",
+        "CEP": "87013110",
+        "cPais": "1058",
+        "xPais": "BRASIL",
+        "fone": "4430280800"
+      }
+    },
+    "dest": {
+      "CNPJ": "",
+      "CPF": "09595036412",
+      "xNome": "NADIELLI GALVAO",
+      "IE": "",
+      "IEST": "",
+      "indIEDest": "9",
+      "ISUF": "",
+      "email": "09595036412@email.com.br;webmusic@musitechinstrumentos.com.b",
+      "enderDest": {
+        "xLgr": "RUA SILVESTRE SOUZA DE JESUS",
+        "nro": "410",
+        "xCpl": "",
+        "xBairro": "MARCELA",
+        "cMun": "2802908",
+        "xMun": "Itabaiana",
+        "UF": "SE",
+        "CEP": "49502255",
+        "cPais": "1058",
+        "xPais": "BRASIL",
+        "fone": ""
+      }
+    },
+    "itens": [
+      {
+        "nItem": "1",
+        "prod": {
+          "cProd": "001914",
+          "cEAN": "SEM GTIN",
+          "xProd": "BAQUETA PRO-MARK LA7AW HICKORY",
+          "NCM": "92099900",
+          "CFOP": "6108",
+          "uCom": "UN",
+          "qCom": "1.0000",
+          "vUnCom": "41.0000000000",
+          "vProd": "41.00",
+          "uTrib": "UN",
+          "qTrib": "1.0000",
+          "vUnTrib": "41.0000000000",
+          "indTot": "1"
+        },
+        "imposto": {
+          "ICMS": {
+            "orig": "2",
+            "CST": "00",
+            "modBC": "3",
+            "vBC": "41.00",
+            "pICMS": "4.0000",
+            "vICMS": "1.64"
+          },
+          "IPI": {
+            "cEnq": "999",
+            "CST": "53"
+          },
+          "PIS": {
+            "tipo": "PISAliq",
+            "CST": "01",
+            "vBC": "41.00",
+            "pPIS": "0.6500",
+            "vPIS": "0.27"
+          },
+          "COFINS": {
+            "tipo": "COFINSAliq",
+            "CST": "01",
+            "vBC": "41.00",
+            "pCOFINS": "3.0000",
+            "vCOFINS": "1.23"
+          }
+        }
+      }
+    ],
+    "totais": {
+      "vBC": "41.00",
+      "vICMS": "1.64",
+      "vICMSDeson": "0.00",
+      "vFCP": "0.00",
+      "vBCST": "0.00",
+      "vST": "0.00",
+      "vFCPST": "0.00",
+      "vFCPSTRet": "0.00",
+      "vProd": "41.00",
+      "vFrete": "0.00",
+      "vSeg": "0.00",
+      "vDesc": "0.00",
+      "vII": "0.00",
+      "vIPI": "0.00",
+      "vIPIDevol": "0.00",
+      "vPIS": "0.27",
+      "vCOFINS": "1.23",
+      "vOutro": "0.00",
+      "vNF": "41.00",
+      "vTotTrib": "4.30"
+    },
+    "protocolo": {
+      "tpAmb": "1",
+      "verAplic": "PR-v4_8_10",
+      "chNFe": "41230503846192000140550020001052301029947626",
+      "dhRecbto": "2023-05-18T08:54:23-03:00",
+      "nProt": "141230126438454",
+      "digVal": "lcozwJvchFMhyLQjhPjkKMxfw+k=",
+      "cStat": "100",
+      "xMotivo": "Autorizado o uso da NF-e"
+    },
+    "modelo": "55",
+    "validacoes": {
+      "IE_emit": {
+        "uf": "PR",
+        "valida": false,
+        "dv_calculado": "",
+        "dv_real": "",
+        "motivo": "Regra do PR não implementada ainda — envie o roteiro oficial"
+      },
+      "IE_dest": {
+        "uf": "SE",
+        "valida": false,
+        "dv_calculado": "",
+        "dv_real": "",
+        "motivo": "Tamanho inválido (0 dígitos)"
+      }
+    }
+  },
+  "classificacao": {
+    "tipo": "venda",
+    "centros_custo": [
+      "Geral",
+      "P&D",
+      "Saúde"
+    ],
+    "setor": "instrumentos_medicao_saude",
+    "achados_setor": [],
+    "capitulo": 92,
+    "capitulo_label": "Cap. 92 — Instrumentos musicais; suas partes e acessórios",
+    "ncm_mais_frequente": "92099900"
+  }
+}

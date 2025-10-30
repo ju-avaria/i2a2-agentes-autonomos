@@ -1,0 +1,184 @@
+{
+  "extracted": {
+    "chave_acesso": "35250718983263000123550090055849311224791513",
+    "ide": {
+      "cUF": "35",
+      "cNF": "22479151",
+      "natOp": "Venda de mercadorias",
+      "mod": "55",
+      "serie": "9",
+      "nNF": "5584931",
+      "dhEmi": "",
+      "tpNF": "1",
+      "idDest": "2",
+      "cMunFG": "3518800",
+      "tpImp": "1",
+      "tpEmis": "1",
+      "cDV": "3",
+      "tpAmb": "1",
+      "finNFe": "1",
+      "indFinal": "1",
+      "indPres": "2",
+      "procEmi": "0",
+      "verProc": "mercadolivre.invoice"
+    },
+    "emit": {
+      "CNPJ": "18983263000123",
+      "CPF": "",
+      "xNome": "AFC COMERCIO VAREJISTA DE COMPONENTES ELETRONICOS LTDA",
+      "xFant": "",
+      "IE": "127679413110",
+      "IEST": "",
+      "IM": "",
+      "CNAE": "",
+      "CRT": "3",
+      "enderEmit": {
+        "xLgr": "Avenida Papa Joao Paulo I",
+        "nro": "4006",
+        "xCpl": "GALPAO 02 MODULO 03",
+        "xBairro": "Residencial Parque Cumbica",
+        "cMun": "3518800",
+        "xMun": "Guarulhos",
+        "UF": "SP",
+        "CEP": "07174005",
+        "cPais": "1058",
+        "xPais": "Brasil",
+        "fone": "111130901236"
+      }
+    },
+    "dest": {
+      "CNPJ": "",
+      "CPF": "09595036412",
+      "xNome": "Nadielli Galvao",
+      "IE": "",
+      "IEST": "",
+      "indIEDest": "9",
+      "ISUF": "",
+      "email": "",
+      "enderDest": {
+        "xLgr": "Rua Silvestre Souza de Jesus",
+        "nro": "410",
+        "xCpl": "Prox. Ao Point Do Gilsinho, Prox. Ao Canal Do Marcela",
+        "xBairro": "Marcela",
+        "cMun": "2802908",
+        "xMun": "Itabaiana",
+        "UF": "SE",
+        "CEP": "49502255",
+        "cPais": "1058",
+        "xPais": "Brasil",
+        "fone": ""
+      }
+    },
+    "itens": [
+      {
+        "nItem": "1",
+        "prod": {
+          "cProd": "C-285",
+          "cEAN": "SEM GTIN",
+          "xProd": "Smartphone Positivo Twist 5 Pro 64gb 2gb 6,26 Black Rubber",
+          "NCM": "85171300",
+          "CEST": "2105301",
+          "CFOP": "6106",
+          "uCom": "UNID",
+          "qCom": "1",
+          "vUnCom": "499.00000000",
+          "vProd": "499.00",
+          "uTrib": "UNID",
+          "qTrib": "1",
+          "vUnTrib": "499.00000000",
+          "indTot": "1",
+          "xPed": "200001248920682"
+        },
+        "imposto": {
+          "ICMS": {
+            "orig": "4",
+            "CST": "00",
+            "modBC": "3",
+            "vBC": "449.10",
+            "pICMS": "7.0000",
+            "vICMS": "31.44"
+          },
+          "IPI": {
+            "cEnq": "999",
+            "CST": "53"
+          },
+          "PIS": {
+            "tipo": "PISAliq",
+            "CST": "01",
+            "vBC": "417.66",
+            "pPIS": "1.6500",
+            "vPIS": "6.89"
+          },
+          "COFINS": {
+            "tipo": "COFINSAliq",
+            "CST": "01",
+            "vBC": "417.66",
+            "pCOFINS": "7.6000",
+            "vCOFINS": "31.74"
+          }
+        }
+      }
+    ],
+    "totais": {
+      "vBC": "449.10",
+      "vICMS": "31.44",
+      "vICMSDeson": "0.00",
+      "vFCP": "0.00",
+      "vBCST": "0.00",
+      "vST": "0.00",
+      "vFCPST": "0.00",
+      "vFCPSTRet": "0.00",
+      "vProd": "499.00",
+      "vFrete": "0.00",
+      "vSeg": "0.00",
+      "vDesc": "49.90",
+      "vII": "0.00",
+      "vIPI": "0.00",
+      "vIPIDevol": "0.00",
+      "vPIS": "6.89",
+      "vCOFINS": "31.74",
+      "vOutro": "0.00",
+      "vNF": "449.10",
+      "vTotTrib": "156.94"
+    },
+    "protocolo": {
+      "tpAmb": "1",
+      "verAplic": "SP_NFE_PL009_V4",
+      "chNFe": "35250718983263000123550090055849311224791513",
+      "dhRecbto": "2025-07-31T17:08:32-03:00",
+      "nProt": "135252144497012",
+      "digVal": "YgEdVgcSxnx0PrXNAkLLZ3GprXk=",
+      "cStat": "100",
+      "xMotivo": "Autorizado o uso da NF-e"
+    },
+    "modelo": "55",
+    "validacoes": {
+      "IE_emit": {
+        "uf": "SP",
+        "valida": true,
+        "dv_calculado": "30",
+        "dv_real": "30",
+        "motivo": "SP industrial: DV9 (mod11 resto→último alg.) + DV12 (idem)"
+      },
+      "IE_dest": {
+        "uf": "SE",
+        "valida": false,
+        "dv_calculado": "",
+        "dv_real": "",
+        "motivo": "Tamanho inválido (0 dígitos)"
+      }
+    }
+  },
+  "classificacao": {
+    "tipo": "venda",
+    "centros_custo": [
+      "Engenharia",
+      "TI"
+    ],
+    "setor": "maquinas_eletronicos",
+    "achados_setor": [],
+    "capitulo": 85,
+    "capitulo_label": "Cap. 85 — Máquinas, aparelhos e materiais elétricos, e suas partes; aparelhos de gravação ou de reprodução de som, aparelhos de gravação ou de reprodução de imagens e de som em televisão, e suas partes e acessórios",
+    "ncm_mais_frequente": "85171300"
+  }
+}

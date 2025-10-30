@@ -1,0 +1,176 @@
+{
+  "extracted": {
+    "chave_acesso": "35230625682864000242550010000121141531969805",
+    "ide": {
+      "cUF": "35",
+      "cNF": "53196980",
+      "natOp": "Venda de mercadoria para consumidor final",
+      "mod": "55",
+      "serie": "1",
+      "nNF": "12114",
+      "dhEmi": "",
+      "tpNF": "1",
+      "idDest": "2",
+      "cMunFG": "3550308",
+      "tpImp": "1",
+      "tpEmis": "1",
+      "cDV": "5",
+      "tpAmb": "1",
+      "finNFe": "1",
+      "indFinal": "1",
+      "indPres": "2",
+      "procEmi": "0",
+      "verProc": "mercadolivre.invoice"
+    },
+    "emit": {
+      "CNPJ": "25682864000242",
+      "CPF": "",
+      "xNome": "FM SONSIN",
+      "xFant": "FM Sonsin",
+      "IE": "421044998112",
+      "IEST": "",
+      "IM": "",
+      "CNAE": "",
+      "CRT": "1",
+      "enderEmit": {
+        "xLgr": "Rua Desembargador Urbano Marcondes",
+        "nro": "166",
+        "xCpl": "Nao consta",
+        "xBairro": "Vila Guilherme",
+        "cMun": "3550308",
+        "xMun": "Sao Paulo",
+        "UF": "SP",
+        "CEP": "02076000",
+        "cPais": "1058",
+        "xPais": "Brasil",
+        "fone": "0011973727695"
+      }
+    },
+    "dest": {
+      "CNPJ": "",
+      "CPF": "09595036412",
+      "xNome": "Nadielli Galvao",
+      "IE": "",
+      "IEST": "",
+      "indIEDest": "9",
+      "ISUF": "",
+      "email": "",
+      "enderDest": {
+        "xLgr": "Rua Silvestre Souza de Jesus",
+        "nro": "410",
+        "xCpl": "Prox. Ao Point Do Gilsinho, Prox. Ao Canal Do Marcela",
+        "xBairro": "Marcela",
+        "cMun": "2802908",
+        "xMun": "Itabaiana",
+        "UF": "SE",
+        "CEP": "49502255",
+        "cPais": "1058",
+        "xPais": "Brasil",
+        "fone": "0081985775587"
+      }
+    },
+    "itens": [
+      {
+        "nItem": "1",
+        "prod": {
+          "cProd": "FEL11986",
+          "cEAN": "7909527625358",
+          "xProd": "Camisa Feminina Umbro Sport Recife Iii Laranja 2021",
+          "NCM": "61099000",
+          "CEST": "2805900",
+          "CFOP": "6108",
+          "uCom": "UN",
+          "qCom": "1",
+          "vUnCom": "139.90000000",
+          "vProd": "139.90",
+          "uTrib": "UN",
+          "qTrib": "1",
+          "vUnTrib": "139.90000000",
+          "indTot": "1",
+          "xPed": "200000577147882"
+        },
+        "imposto": {
+          "ICMS": {
+            "orig": "0",
+            "CSOSN": "102"
+          },
+          "PIS": {
+            "tipo": "PISOutr",
+            "CST": "49",
+            "vBC": "139.90",
+            "pPIS": "0.0000",
+            "vPIS": "0.00"
+          },
+          "COFINS": {
+            "tipo": "COFINSOutr",
+            "CST": "49",
+            "vBC": "139.90",
+            "pCOFINS": "0.0000",
+            "vCOFINS": "0.00"
+          }
+        }
+      }
+    ],
+    "totais": {
+      "vBC": "0.00",
+      "vICMS": "0.00",
+      "vICMSDeson": "0.00",
+      "vFCP": "0.00",
+      "vBCST": "0.00",
+      "vST": "0.00",
+      "vFCPST": "0.00",
+      "vFCPSTRet": "0.00",
+      "vProd": "139.90",
+      "vFrete": "0.00",
+      "vSeg": "0.00",
+      "vDesc": "0.00",
+      "vII": "0.00",
+      "vIPI": "0.00",
+      "vIPIDevol": "0.00",
+      "vPIS": "0.00",
+      "vCOFINS": "0.00",
+      "vOutro": "0.00",
+      "vNF": "139.90",
+      "vTotTrib": "44.00"
+    },
+    "protocolo": {
+      "tpAmb": "1",
+      "verAplic": "SP_NFE_PL009_V4",
+      "chNFe": "35230625682864000242550010000121141531969805",
+      "dhRecbto": "2023-06-02T15:18:36-03:00",
+      "nProt": "135230857204748",
+      "digVal": "5x4nEJkT5/WyWJcdzpEA/QQ4Zjw=",
+      "cStat": "100",
+      "xMotivo": "Autorizado o uso da NF-e"
+    },
+    "modelo": "55",
+    "validacoes": {
+      "IE_emit": {
+        "uf": "SP",
+        "valida": true,
+        "dv_calculado": "82",
+        "dv_real": "82",
+        "motivo": "SP industrial: DV9 (mod11 resto→último alg.) + DV12 (idem)"
+      },
+      "IE_dest": {
+        "uf": "SE",
+        "valida": false,
+        "dv_calculado": "",
+        "dv_real": "",
+        "motivo": "Tamanho inválido (0 dígitos)"
+      }
+    }
+  },
+  "classificacao": {
+    "tipo": "venda",
+    "centros_custo": [
+      "Geral",
+      "Moda"
+    ],
+    "setor": "têxtil_vestuário",
+    "achados_setor": [],
+    "capitulo": 61,
+    "capitulo_label": "Cap. 61 — Vestuário e seus acessórios, de malha",
+    "ncm_mais_frequente": "61099000"
+  }
+}
